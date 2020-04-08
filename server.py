@@ -60,7 +60,6 @@ class ServerProtocol(asyncio.Protocol):
     # Вывод последних 10 сообщений
     def send_history(self):
         for message in self.server.messages[-10:]:
-            print(f"{message}\n\n")
             self.transport.write(f"{message}\n".encode())
 
 
