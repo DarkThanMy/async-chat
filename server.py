@@ -1,4 +1,6 @@
+#
 # Серверное приложение для соединений
+#
 import asyncio
 from asyncio import transports
 
